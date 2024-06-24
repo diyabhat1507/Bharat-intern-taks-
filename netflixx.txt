@@ -1,0 +1,158 @@
+HTML
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamland</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Streamland</h1>
+            <img src="logo.png" alt="Streamland Logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">New & Popular</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="hero-banner.jpg" alt="Hero Banner">
+            <div class="hero-content">
+                <h2>Award-winning shows and movies, at your fingertips.</h2>
+                <p>Start your free trial today and watch from anywhere.</p>
+                <button>Start Your Free Trial</button>
+            </div>
+        </section>
+
+        <section class="categories">
+            <h2>Browse by Category</h2>
+            <div class="container">
+                <ul>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Comedy</a></li>
+                    <li><a href="#">Drama</a></li>
+                    <li><a href="#">Thriller</a></li>
+                    <li><a href="#">Sci-Fi</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="trending">
+            <h2>Trending Now</h2>
+            <div class="container">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Streamland 2024</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+css
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    position: relative;
+    height: 500px; /* Adjust height as needed */
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 40px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hero button {
+    background-color: #e50914;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.categories {
+    padding: 40px 0;
+}
+
+.categories h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.categories ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.categories li {
+    margin: 10px;
+}
+
+.trending {
+
